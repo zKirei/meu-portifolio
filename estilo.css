@@ -1,0 +1,587 @@
+/* Importa a fonte Quicksand da Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* Estilos para o elemento body */
+body {
+    color: #fff;  /* Cor do texto */
+    background-color: #e9ff99;  /* Cor de fundo */
+    background-image:  /* Imagem de fundo com gradientes radiais */
+        radial-gradient(at 9% 89%, hsla(215, 90%, 73%, 1) 0px, transparent 50%),
+        radial-gradient(at 72% 6%, hsla(331, 74%, 64%, 1) 0px, transparent 50%),
+        radial-gradient(at 24% 19%, hsla(14, 90%, 74%, 1) 0px, transparent 50%),
+        radial-gradient(at 65% 6%, hsla(6, 79%, 76%, 1) 0px, transparent 50%),
+        radial-gradient(at 20% 98%, hsla(316, 72%, 64%, 1) 0px, transparent 50%),
+        radial-gradient(at 44% 9%, hsla(40, 96%, 77%, 1) 0px, transparent 50%),
+        radial-gradient(at 10% 9%, hsla(76, 65%, 63%, 1) 0px, transparent 50%);
+    min-height: 100vh;  /* Altura mínima da tela do dispositivo */
+}
+
+/* Estilos para o elemento .container */
+.container {
+    width: 100%;  /* Largura de 100% */
+    display: flex;  /* Exibir como flex */
+    justify-content: center;  /* Centralizar o conteúdo horizontalmente */
+}
+
+/* Estilos para o elemento .glass-container */
+.glass-container {
+    max-width: 72vw;  /* Largura máxima de 72% da largura da viewport */
+    margin-top: 10vh;  /* Margem superior de 10% da altura da viewport */
+    margin-bottom: 30px;  /* Margem inferior de 30 pixels */
+    background: rgba(0, 0, 0, 0.56);  /* Cor de fundo com transparência */
+    padding: 50px;  /* Preenchimento interno de 50 pixels */
+    border-radius: 16px;  /* Raio de borda de 16 pixels */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  /* Sombra */
+    backdrop-filter: blur(11.6px);  /* Efeito de desfoque no fundo */
+    -webkit-backdrop-filter: blur(11.6px);  /* Efeito de desfoque no fundo para navegadores Webkit */
+}
+
+/* Estilos para o elemento .logo */
+.logo {
+    display: inline-block;  /* Exibir como bloco inline */
+    font-size: 30px;  /* Tamanho da fonte */
+    font-weight: 600;  /* Peso da fonte */
+    margin-top: -10px;  /* Margem superior negativa de 10 pixels */
+}
+
+/* Estilos para a lista de navegação ul.nav-links */
+ul.nav-links {
+    text-align: center;  /* Centralizar o texto */
+    margin: 0;  /* Margem zero */
+    float: center;  /* Alinhamento no centro (correção: deve ser 'center') */
+    display: flex;  /* Exibir como flex */
+    list-style: none;  /* Remover estilo de lista */
+    justify-content: center;  /* Centralizar o conteúdo horizontalmente */
+}
+
+/* Estilos para os itens de navegação li.nav-link */
+li.nav-link {
+    margin: 0 20px;  /* Margem de 0 nas laterais e 20px na parte superior/inferior */
+    font-size: 17px;  /* Tamanho da fonte */
+    font-weight: 300;  /* Peso da fonte */
+}
+
+/* Estilos para o elemento .content */
+.content {
+    display: flex;  /* Exibir como flex */
+    width: 100%;  /* Largura de 100% */
+}
+
+/* Estilos para o elemento .main */
+.main {
+    margin-top: 10vh;  /* Margem superior de 10% da altura da viewport */
+    display: inline-block;  /* Exibir como bloco inline */
+    padding: 20px;  /* Preenchimento interno de 20 pixels */
+}
+
+/* Estilos para o título h2 dentro de .main */
+.main h2 {
+    font-size: 35px;  /* Tamanho da fonte */
+}
+
+/* Estilos para parágrafos dentro de .main */
+.main p {
+    font-size: 16px;  /* Tamanho da fonte */
+    line-height: 23px;  /* Altura da linha */
+}
+
+/* Estilos para o botão */
+button {
+    margin-top: 10px;  /* Margem superior de 10 pixels */
+    width: 100%;  /* Largura de 100% */
+    height: 40px;  /* Altura de 40 pixels */
+    font-size: 15px;  /* Tamanho da fonte */
+    color: #fff;  /* Cor do texto */
+    background-color: transparent;  /* Cor de fundo transparente */
+    border: 1px solid #fff;  /* Borda com 1 pixel sólido e cor branca */
+    border-radius: 10px;  /* Raio de borda de 10 pixels */
+    cursor: pointer;  /* Altera o cursor ao passar sobre o botão */
+    transition: all 0.3s ease;  /* Efeito de transição suave */
+}
+
+/* Estilos para o botão .botao-link */
+.botao-link {
+    margin-top: 10px;  /* Margem superior de 10 pixels */
+    width: 100%;  /* Largura de 100% */
+    height: 40px;  /* Altura de 40 pixels */
+    font-size: 15px;  /* Tamanho da fonte */
+    color: #fff;  /* Cor do texto */
+    background-color: transparent;  /* Cor de fundo transparente */
+    border: 1px solid #fff;  /* Borda com 1 pixel sólido e cor branca */
+    border-radius: 10px;  /* Raio de borda de 10 pixels */
+    cursor: pointer;  /* Altera o cursor ao passar sobre o botão */
+    transition: all 0.3s ease;  /* Efeito de transição suave */
+}
+
+/* Efeito de hover para o botão .botao-link */
+.botao-link:hover {
+    border-color: #2668db;  /* Cor da borda ao passar o mouse */
+    background-color: #2668db;  /* Cor de fundo ao passar o mouse */
+}
+
+/* Efeito de hover para o botão */
+button:hover {
+    border-color: #2668db;  /* Cor da borda ao passar o mouse */
+    background-color: #2668db;  /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilos para o elemento .image-wrapper */
+.image-wrapper {
+    display: flex;  /* Exibir como flex */
+    margin-top: 5vh;  /* Margem superior de 5% da altura da viewport */
+    position: relative;  /* Posição relativa */
+    max-width: 100%;  /* Largura máxima de 100% */
+    max-height: 400px;  /* Altura máxima de 400 pixels */
+}
+
+/* Estilos para o elemento .attrebute */
+.attrebute {
+    position: absolute;  /* Posição absoluta */
+    bottom: 20px;  /* Distância de 20 pixels a partir da parte inferior */
+    right: 0;  /* Alinhado à direita */
+    font-size: 12px;  /* Tamanho da fonte */
+}
+
+/* Estilos para o elemento .contact-box */
+.contact-box {
+    display: inline-block;  /* Exibir como bloco inline */
+    width: 100%;  /* Largura de 100% */
+    position: relative;  /* Posição relativa */
+    float: none;  /* Não usar flutuação */
+}
+
+/* Estilos para o elemento .right */
+.right {
+    width: 100%;  /* Largura de 100% */
+    float: left;  /* Alinhar à esquerda */
+}
+
+/* Estilos para o input.field */
+input.field {
+    margin: 10px;  /* Margem de 10 pixels */
+    padding-bottom: 30px;  /* Preenchimento inferior de 30 pixels */
+    width: 100%;  /* Largura de 100% */
+    max-width: 92%;  /* Largura máxima de 92% */
+}
+
+/* Estilos para o elemento .field */
+.field {
+    padding: 10px;  /* Preenchimento de 10 pixels */
+}
+
+/* Estilos para textarea.field */
+textarea.field {
+    margin: 10px;  /* Margem de 10 pixels */
+    padding-bottom: 30px;  /* Preenchimento inferior de 30 pixels */
+    width: 100%;  /* Largura de 100% */
+    max-width: 92%;  /* Largura máxima de 92% */
+    height: 100%;  /* Altura de 100% */
+}
+
+/* Estilos para o botão .btn */
+button.btn {
+    width: 100%;  /* Largura de 100% */
+}
+
+/* Estilos para imagens dentro de .main */
+.main img {
+    position: relative;  /* Posição relativa */
+    width: 70%;  /* Largura de 70% */
+    margin-top: 5%;  /* Margem superior de 5% */
+    left: 20%;  /* Alinhado à esquerda a partir da margem esquerda de 20% */
+
+}
+
+/* Estilos para o elemento .creditos */
+.creditos {
+    float: right;  /* Alinhar à direita */
+}
+
+/* Estilos para o elemento .introducao */
+.introducao {
+    width: 100%;  /* Largura de 100% */
+}
+
+/* Estilos para o elemento .box */
+.box {
+    width: 80%;  /* Largura de 80% */
+    max-width: 450px;  /* Largura máxima de 450 pixels */
+    padding: 40px;  /* Preenchimento de 40 pixels */
+    text-align: center;  /* Centralizar o texto */
+    margin: 5% auto;  /* Margem superior e inferior de 5% e margem lateral automática */
+    color: white;  /* Cor do texto */
+}
+
+/* Estilos para o elemento .box-img */
+.box-img {
+    border-radius: 50%;  /* Raio de borda de 50% (forma circular) */
+    width: 200px;  /* Largura de 200 pixels */
+    height: 200px;  /* Altura de 200 pixels */
+}
+
+/* Estilos para o título h1 dentro de .box */
+.box h1 {
+    font-size: 40px;  /* Tamanho da fonte */
+    letter-spacing: 4px;  /* Espaçamento entre letras */
+    font-weight: 100;  /* Peso da fonte */
+}
+
+/* Estilos para o título h5 dentro de .box */
+.box h5 {
+    font-size: 20px;  /* Tamanho da fonte */
+    letter-spacing: 3px;  /* Espaçamento entre letras */
+    font-weight: 100;  /* Peso da fonte */
+}
+
+/* Estilos para parágrafos dentro de .box */
+.box p {
+    text-align: justify;  /* Justificar o texto */
+}
+
+/* Estilos para lista não ordenada */
+ul {
+    margin: 0;  /* Margem zero */
+    padding: 0;  /* Preenchimento zero */
+}
+
+/* Estilos para itens da lista dentro de .box */
+.box li {
+    display: inline-block;  /* Exibir como bloco inline */
+    margin: 6px;  /* Margem de 6 pixels */
+    list-style: none;  /* Remover estilo de lista */
+}
+
+/* Estilos para links dentro de itens da lista */
+.box li a {
+    color: white;  /* Cor do texto */
+    text-decoration: none;  /* Remover sublinhado de link */
+    font-size: 60px;  /* Tamanho da fonte */
+    transition: all ease-in-out 250ms;  /* Efeito de transição suave */
+}
+
+/* Efeito de hover para links dentro de itens da lista */
+.box li a:hover {
+    color: #b9b9b9;  /* Cor do texto ao passar o mouse */
+}
+
+/* Estilos para telas menores ou igual a 1075px de largura */
+@media screen and (max-width: 1075px) {
+    .content {
+        flex-direction: column;  /* Altera a direção de flex para coluna */
+    }
+}
+
+/* Estilos para telas menores ou igual a 720px de largura */
+@media screen and (max-width: 720px) {
+    .box {
+        width: 90%;  /* Largura de 90% */
+    }
+    .box-img {
+        width: 40%;  /* Largura de 40% */
+        max-width: 200px;  /* Largura máxima de 200 pixels */
+    }
+    .box h1 {
+        font-size: 30px;  /* Tamanho da fonte */
+    }
+    .box h5 {
+        font-size: 16px;  /* Tamanho da fonte */
+    }
+    .box p {
+        font-size: 14px;  /* Tamanho da fonte */
+    }
+    .logo {
+        font-size: 22px;  /* Tamanho da fonte */
+    }
+    li.nav-link {
+        font-size: 13px;  /* Tamanho da fonte */
+    }
+    .main h2 {
+        font-size: 28px;  /* Tamanho da fonte */
+    }
+    .main p {
+        font-size: 15px;  /* Tamanho da fonte */
+    }
+    button {
+        font-size: 13px;  /* Tamanho da fonte */
+    }
+    .image-wrapper img {
+        max-width: 400px;  /* Largura máxima de 400 pixels */
+    }
+}
+
+/* Estilos para o cabeçalho (header) */
+header {
+    position: relative;  /* Posição relativa */
+    padding-top: 2rem;  /* Preenchimento superior de 2 rem */
+    display: grid;  /* Exibir como grid */
+    grid-template-columns: repeat(2, 1fr);  /* Layout de duas colunas com largura igual */
+    align-items: center;  /* Alinhar itens ao centro */
+    gap: 2rem;  /* Espaçamento entre colunas de 2 rem */
+}
+
+/* Estilos para o conteúdo dentro do cabeçalho .content h4 */
+header .content h4 {
+    margin-bottom: 1rem;  /* Margem inferior de 1 rem */
+    color: #ccc;  /* Cor do texto */
+    font-size: 1rem;  /* Tamanho da fonte */
+    font-weight: 600;  /* Peso da fonte */
+}
+
+/* Estilos para o conteúdo dentro do cabeçalho .content h1 */
+header .content h1 {
+    color: #fff;  /* Cor do texto */
+    margin-bottom: 1rem;  /* Margem inferior de 1 rem */
+    font-size: 3rem;  /* Tamanho da fonte */
+    font-weight: 700;  /* Peso da fonte */
+    line-height: 4rem;  /* Altura da linha de 4 rem */
+}
+
+/* Estilos para o elemento span dentro do cabeçalho .content h1 */
+header .content h1 span {
+    -webkit-text-fill-color: transparent;  /* Cor de preenchimento de texto transparente (para navegadores Webkit) */
+    -webkit-text-stroke: 1px #fff;  /* Traço de texto de 1 pixel na cor branca */
+}
+
+/* Estilos para o conteúdo dentro do cabeçalho .content p */
+header .content p {
+    margin-bottom: 2rem;  /* Margem inferior de 2 rem */
+    color: #ccc;  /* Cor do texto */
+}
+
+/* Estilos para a imagem dentro do cabeçalho .image */
+header .image {
+    position: relative;  /* Posição relativa */
+}
+
+/* Estilos para a imagem dentro do cabeçalho .image img */
+header .image img {
+    max-width: 80%;  /* Largura máxima de 80% */
+    margin: auto;  /* Margem automática nas laterais */
+}
+
+/* Estilos para a seção de cabeçalho .header */
+section .header {
+    margin-bottom: 1rem;  /* Margem inferior de 1 rem */
+    color: #fff;  /* Cor do texto */
+    text-align: center;  /* Centralizar o texto */
+    font-size: 2.50rem;  /* Tamanho da fonte */
+    font-weight: 600;  /* Peso da fonte */
+}
+
+/* Estilos para a seção de recursos .features */
+.features {
+    display: flex;  /* Exibir como flex */
+    flex-wrap: wrap;  /* Permitir quebrar para a próxima linha */
+    margin-top: 4rem;  /* Margem superior de 4 rem */
+    grid-template-columns: repeat(4, 1fr);  /* Layout de quatro colunas com largura igual */
+    gap: 2rem;  /* Espaçamento entre colunas de 2 rem */
+}
+
+/* Estilos para os cartões de recursos .features .card */
+.features .card {
+    flex: 1;  /* Crescer igualmente dentro do contêiner flex */
+    width: calc(25% - 2rem);  /* Largura com cálculo para manter o espaçamento */
+    margin: 1rem;  /* Margem de 1 rem */
+    background-color: #27272a;  /* Cor de fundo */
+    padding: 1rem;  /* Preenchimento interno de 1 rem */
+    border: 2px solid transparent;  /* Borda com 2 pixels sólidos e transparentes */
+    border-radius: 15px;  /* Raio de borda de 15 pixels */
+    transition: all 0.3s ease;  /* Efeito de transição suave */
+}
+
+/* Efeito de hover para os cartões de recursos .features .card */
+.features .card:hover {
+    background-color: #323232;  /* Cor de fundo ao passar o mouse */
+    border-color: #fff;  /* Cor da borda ao passar o mouse */
+}
+
+/* Estilos para o span dentro dos cartões .features .card span */
+.features .card span {
+    display: inline-block;  /* Exibir como bloco inline */
+    background-color: #1e40af;  /* Cor de fundo */
+    padding: 2px 9px;  /* Preenchimento interno de 2px por 9px */
+    margin-bottom: 1rem;  /* Margem inferior de 1 rem */
+    font-size: 1.75rem;  /* Tamanho da fonte */
+    color: #fff;  /* Cor do texto */
+    border-radius: 5px;  /* Raio de borda de 5 pixels */
+}
+
+/* Estilos para o título h4 dentro dos cartões .features .card */
+.features .card h4 {
+    margin-bottom: 0.5rem;  /* Margem inferior de 0.5 rem */
+    color: #fff;  /* Cor do texto */
+    font-size: 1.2rem;  /* Tamanho da fonte */
+    font-weight: 600;  /* Peso da fonte */
+}
+
+/* Estilos para parágrafos dentro dos cartões .features .card */
+.features .card p {
+    color: #ccc;  /* Cor do texto */
+    margin-bottom: 1rem;  /* Margem inferior de 1 rem */
+}
+
+/* Estilos para links dentro dos cartões .features .card */
+.features .card a {
+    color: #fff;  /* Cor do texto */
+    transition: all 0.3s ease;  /* Efeito de transição suave */
+}
+
+/* Efeito de hover para links dentro dos cartões .features .card */
+.features .card a:hover {
+    color: #1e40af;  /* Cor do texto ao passar o mouse */
+}
+
+/* Estilos para a subseção de cabeçalho .sub-header */
+.sub-header {
+    max-width: 600px;  /* Largura máxima de 600 pixels */
+    margin: auto;  /* Margem automática nas laterais */
+    text-align: center;  /* Centralizar o texto */
+    color: #ccc;  /* Cor do texto */
+}
+
+/* Estilos para a seção de preços .pricing */
+.pricing {
+    margin-top: 4rem;  /* Margem superior de 4 rem */
+    display: grid;  /* Exibir como grid */
+    grid-template-columns: repeat(3, 1fr);  /* Layout de três colunas com largura igual */
+    gap: 2rem;  /* Espaçamento entre colunas de 2 rem */
+}
+
+/* Estilos para os cartões de preços .pricing .card */
+.pricing .card {
+    padding: 3rem 2rem;  /* Preenchimento interno */
+    background-color: #27272a;  /* Cor de fundo */
+    display: flex;  /* Exibir como flex */
+    flex-direction: column;  /* Direção da coluna flex */
+    border: 2px solid transparent;  /* Borda com 2 pixels sólidos e transparentes */
+    border-radius: 15px;  /* Raio de borda de 15 pixels */
+    transition: all 0.3s ease;  /* Efeito de transição suave */
+}
+
+/* Efeito de hover para os cartões de preços .pricing .card */
+.pricing .card:hover {
+    background-color: #323232;  /* Cor de fundo ao passar o mouse */
+    border-color: #fff;  /* Cor da borda ao passar o mouse */
+}
+
+/* Estilos para o conteúdo dentro dos cartões de preços .pricing .card .content */
+.pricing .card .content {
+    flex: 1;  /* Crescer igualmente dentro do contêiner flex */
+    margin-bottom: 2rem;  /* Margem inferior de 2 rem */
+}
+
+/* Estilos para o título h4 dentro dos cartões de preços .pricing .card */
+.pricing .card h4 {
+    margin-bottom: 1rem;  /* Margem inferior de 1 rem */
+    color: #fff;  /* Cor do texto */
+    font-size: 1.2rem;  /* Tamanho da fonte */
+    font-weight: 500;  /* Peso da fonte */
+}
+
+/* Estilos para o título h3 dentro dos cartões de preços .pricing .card */
+.pricing .card h3 {
+    color: #fff;  /* Cor do texto */
+    padding-bottom: 1rem;  /* Preenchimento inferior de 1 rem */
+    margin-bottom: 2rem;  /* Margem inferior de 2 rem */
+    font-size: 2rem;  /* Tamanho da fonte */
+    font-weight: 600;  /* Peso da fonte */
+    border-bottom: 2px dashed #fff;  /* Borda inferior tracejada com cor branca */
+}
+
+/* Estilos para parágrafos dentro dos cartões de preços .pricing .card */
+.pricing .card p {
+    color: #fff;  /* Cor do texto */
+    margin-bottom: 0.75rem;  /* Margem inferior de 0.75 rem */
+    font-size: 1rem;  /* Tamanho da fonte */
+    font-weight: 300;  /* Peso da fonte */
+}
+
+/* Estilos para o preço dentro dos cartões de preços .pricing .card .price */
+.pricing .card .price {
+    margin-top: auto;  /* Margem superior automática */
+}
+
+/* Estilos para o botão dentro dos cartões de preços .pricing .card .btn */
+.pricing .card .btn {
+    width: 100%;  /* Largura de 100% */
+    background-color: #1e40af;  /* Cor de fundo */
+    color: #fff;  /* Cor do texto */
+    padding: 0.75rem 1rem;  /* Preenchimento interno */
+    text-align: center;  /* Centralizar o texto */
+    text-transform: uppercase;  /* Transformar texto em maiúsculas */
+    font-weight: 500;  /* Peso da fonte */
+    border-radius: 5px;  /* Raio de borda de 5 pixels */
+    transition: all 0.3s ease;  /* Efeito de transição suave */
+}
+
+/* Efeito de hover para o botão dentro dos cartões de preços .pricing .card .btn */
+.pricing .card .btn:hover {
+    background-color: #1e40af;  /* Cor de fundo ao passar o mouse */
+    color: #fff;  /* Cor do texto ao passar o mouse */
+}
+
+/* Estilos para o pé de página .footer */
+.footer {
+    margin-top: 4rem;  /* Margem superior de 4 rem */
+    background-color: #333;  /* Cor de fundo */
+    color: #ccc;  /* Cor do texto */
+    padding: 4rem 0;  /* Preenchimento interno */
+    text-align: center;  /* Centralizar o texto */
+}
+
+/* Estilos para os links no rodapé .footer a */
+.footer a {
+    color: #fff;  /* Cor do texto */
+    margin: 0 0.5rem;  /* Margem nas laterais */
+    font-size: 1.25rem;  /* Tamanho da fonte */
+}
+
+/* Estilos para o elemento .social-links */
+.social-links {
+    margin-top: 2rem;  /* Margem superior de 2 rem */
+}
+
+/* Estilos para os ícones de mídia social .social-links i */
+.social-links i {
+    color: #ccc;  /* Cor do texto */
+    font-size: 1.5rem;  /* Tamanho da fonte */
+    margin: 0 0.5rem;  /* Margem nas laterais */
+    transition: all 0.3s ease;  /* Efeito de transição suave */
+}
+
+/* Efeito de hover para os ícones de mídia social .social-links i */
+.social-links i:hover {
+    color: #1e40af;  /* Cor do texto ao passar o mouse */
+}
+
+/* Estilos para o elemento .btn-back-to-top */
+.btn-back-to-top {
+    background-color: #1e40af;  /* Cor de fundo */
+    color: #fff;  /* Cor do texto */
+    position: fixed;  /* Posição fixa */
+    bottom: 20px;  /* Distância de 20 pixels a partir do fundo */
+    right: 20px;  /* Distância de 20 pixels a partir da direita */
+    padding: 1rem;  /* Preenchimento interno de 1 rem */
+    border-radius: 50%;  /* Raio de borda de 50% (forma circular) */
+    font-size: 1.5rem;  /* Tamanho da fonte */
+    cursor: pointer;  /* Altera o cursor ao passar sobre o botão */
+    transition: all 0.3s ease;  /* Efeito de transição suave */
+}
+
+/* Efeito de hover para o botão de voltar ao topo .btn-back-to-top */
+.btn-back-to-top:hover {
+    background-color: #fff;  /* Cor de fundo ao passar o mouse */
+    color: #1e40af;  /* Cor do texto ao passar o mouse */
+}
+
+/* Estilos para o rodapé do fundo .footer-background */
+.footer-background {
+    background-color: #1e40af;  /* Cor de fundo */
+    padding: 2rem 0;  /* Preenchimento interno */
+}
+
+/* Estilos para o ícone de seta para cima .back-to-top */
+.back-to-top {
+    font-size: 2rem;  /* Tamanho da fonte */
+    color: #fff;  /* Cor do texto */
+}
